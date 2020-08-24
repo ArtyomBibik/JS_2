@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="8">
+    <title>Switch_Calc_Sale</title>
+
+
+</head>
+<body>
+    
+
+    <script>
+
+// calc sale
+   var sum =prompt("Введите сумму покупки");
+   var sale;
+
+   switch  (true) {
+    case ((sum>0) && (sum<1000)):
+    sale = 0;
+     alert("Скидка "+sale+"%");
+     break;
+   
+
+     
+     case ((sum>=1000) && (sum<10000)):
+     sale = 5;
+     alert("Скидка "+sale+"%");
+     break;
+    
+    
+    case (sum>=10000):
+    sale = 10;
+     alert("Скидка максимальная"+sale+"%");
+     break;
+
+    
+      default:
+         alert( "Нет таких значений" );
+     }
+     alert("Ваша экономия "+(sum*sale/100)+" грн."+" Итого к оплате "+(sum-(sum*sale/100))+" грн.")
+
+
+
+
+    </script>
+</body>
+
+
+</html>

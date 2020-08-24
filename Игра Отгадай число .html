@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="8">
+    <title>Игра Отгадай число</title>
+
+
+</head>
+<body>
+    
+
+    <script>
+
+var numbers =getRandom(12);
+
+console.log(numbers)
+function getRandom(numbers) {
+return Math.ceil(Math.random()*numbers);
+}
+var question = prompt("Отгадай число от 1 до 12?");
+
+if (numbers==question) {
+ alert("Ты победил!!!")
+}
+else {
+
+
+while ((numbers!=question) && (question!=null)) {
+console.log(question)
+
+
+
+if (numbers>question) {
+ alert("Число больше")
+}
+else if (numbers<question) {
+ alert("Число меньше")
+}
+
+var question = prompt("Неправильно.Попробуй еще отгадай число от 1 до 12?");
+}
+}
+
+console.log(numbers)
+console.log(question)
+
+
+    </script>
+</body>
+
+
+</html>
